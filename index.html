@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+ <div class="container">
+    <div class="contactUs">Contact Us</div>
+    <form id="form" onsubmit="event.preventDefault()">
+        <div class="name">
+            <div class="firstName">
+                <label>First Name *</label>
+                <input type="text" id="firstName" onkeyup="validateFirstName()" >
+                <span id="firstName-error"></span>
+            </div>
+            <div class="lastName">
+                <label>Last Name *</label>
+                <input type="text"  id="lastName" onkeyup="validateLastName()" >
+                <span id="lastName-error"></span>
+            </div>
+        </div>
+        <div class="email">
+            <label>Email Address *</label>
+            <input type="email" id="email" onkeyup="validateEmail()" >
+            <span id="email-error"></span>
+        </div>
+        <div class="query">
+            <label>Query Type *</label>
+            <div class="btn">
+                <button class="generalEnquiry">
+                    <input type="radio"  >
+                    General Enquiry
+                </button>
+                <button class="supportRequest">
+                    <input type="radio"  >
+                    Support Request
+                </button>
+
+            </div>
+            <div class="message">
+                <label>Message *</label>
+                <textarea row="5" cols="50"  id="message" onkeyup="validateMessage()"></textarea>
+                <span id="message-error"></span>
+            </div>
+            <div class="consentBtn">
+                <input id="checkBox" type="checkbox" onkeyup = "validateCheckBox()" >
+                <p>I consent to being contacted by the team</p>
+                <span id="checkBox-error"></span>
+            </div>
+            <button class="submitBtn" onclick="return validateForm()">Submit Button</button>
+            <span id="submit-error"></span>
+        </div>
+    </form>
+ </div>   
+</body>
+</html>

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 80vh;
+    width: 70%;
+    background-color: #dadada;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+input{
+    height: 2rem;
+}
+.name{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+}
+.firstName{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0.2rem;
+
+}
+.lastName{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0.2rem;
+}
+.email{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.query{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+.generalEnquiry{
+    width: 100%;
+    margin: 0.2rem;
+    display:flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.2rem;
+}
+.supportRequest{
+    width: 100%;
+    margin: 0.2rem;
+    display:flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.2rem;
+}
+.message{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.consentBtn{
+    display: flex;
+    margin: 1rem;
+}
+#checkBox{
+   margin: 0.2rem;
+}
+
+p{
+    margin: 0.7rem 0 0.2rem 0.2rem;
+}
+
+.submitBtn{
+    width: 100%;
+    padding: 0.3rem;
+    background-color: seagreen;
+    border: none;
+    color: white;
+}
+
+span{
+    color: red;
+}
